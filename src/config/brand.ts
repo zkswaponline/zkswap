@@ -2,7 +2,13 @@
 // To publish the real contract address, replace the value of CA below. The navbar copy pill, the footer, the token page
 // and every explorer link derive from it. Anything that is not a 0x + 40 hex address is treated as "not launched yet".
 
-const CA: string = "TBA";
+const CA: string = "0x38fd6d15137085e303bde0154a300f0175edac06";
+
+/**
+ * Pair the chart link opens on DEXTools: the token's Pons curve while it trades there. After graduation, swap in
+ * the address of the pair DEXTools lists for the pool.
+ */
+const CHART_PAIR = "0x24c4757c66b28ebc8e959f1380e3fb1ec3ad4188";
 
 /**
  * True once the domain points at this deployment. While false, the production *.vercel.app host is served as is
@@ -124,7 +130,7 @@ export function chartUrl(address: string): string | null {
 
 /** Chart link for the token once it trades (DEXTools); null before launch. */
 export function tokenChartUrl(): string | null {
-  return isAddress(BRAND.ca) ? chartUrl(BRAND.ca) : null;
+  return isAddress(BRAND.ca) ? chartUrl(CHART_PAIR) : null;
 }
 
 /** Launchpad for the token (Pons). One place to change it. Before the CA exists the buy buttons read "At launch". */

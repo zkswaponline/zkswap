@@ -113,7 +113,7 @@ The site offers to add it when you connect.
 
 ## Token
 
-$ZKSWAP is the community token of zkSwap on Robinhood Chain. Contract address: announced on https://zkswap.online at launch. It has no promised value. Any use of it inside the product is planned, not built; every feature works without it.
+$ZKSWAP is the community token of zkSwap on Robinhood Chain. Contract address: `0x38fd6d15137085e303bde0154a300f0175edac06`, live on Pons on Robinhood Chain. It has no promised value. Any use of it inside the product is planned, not built; every feature works without it.
 
 ## Deploy your own
 
